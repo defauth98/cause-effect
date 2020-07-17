@@ -12,8 +12,8 @@ const peoples = [
     birthday: "24/03",
   },
   {
-    name: "Nilzete Castro Santos Hilária",
-    smallName: "Nilzete Castro",
+    name: "Patricia Franco Cavalheiro",
+    smallName: "Patricia Franco",
     street: "Rua Principal",
     city: "Londrina",
     state: "Paraíba",
@@ -86,19 +86,33 @@ const peoples = [
 peoples.map((people) => {
   const smallNameContainer = document.createElement("div");
   const smallname = document.createElement("p");
-  const triangle = document.createElement("div");
 
-  triangle.classList.add("vertical");
+  const icon = document.createElement("i");
+
+  icon.classList.add("fa");
+  icon.classList.add("fa-circle-o");
+  icon.style.margin = "10px";
+  icon.style.cursor = "pointer";
 
   smallNameContainer.classList.add("smallNameContainer");
 
   smallname.textContent = people.smallName;
   smallname.classList.add("smallName");
 
-  smallNameContainer.appendChild(triangle);
+  smallNameContainer.appendChild(icon);
   smallNameContainer.appendChild(smallname);
 
   smallNameContainer.addEventListener("click", () => {
+    const circle = icon.classList.contains("fa-circle-o");
+
+    if (circle) {
+      icon.classList.remove("fa-circle-o");
+      icon.classList.add("fa-angle-down");
+    } else {
+      icon.classList.remove("fa-angle-down");
+      icon.classList.add("fa-circle-o");
+    }
+
     peopleContainer.style.display === "none"
       ? (peopleContainer.style.display = "grid")
       : (peopleContainer.style.display = "none");

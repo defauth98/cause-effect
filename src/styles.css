@@ -59,7 +59,7 @@ h1 {
 
 .line {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 .label {
