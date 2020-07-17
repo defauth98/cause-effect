@@ -86,8 +86,32 @@ const peoples = [
 peoples.map((people) => {
   const smallNameContainer = document.createElement("div");
   const smallname = document.createElement("p");
-
   const icon = document.createElement("i");
+  const peopleContainer = document.createElement("div");
+
+  const peopleName = document.createElement("p");
+  const peopleStreet = document.createElement("p");
+  const peopleCity = document.createElement("p");
+  const peopleState = document.createElement("p");
+  const peopleCountry = document.createElement("p");
+  const peopleTelephone = document.createElement("p");
+  const peopleBirthday = document.createElement("p");
+
+  const name = document.createElement("p");
+  const street = document.createElement("p");
+  const city = document.createElement("p");
+  const state = document.createElement("p");
+  const country = document.createElement("p");
+  const telephone = document.createElement("p");
+  const birthday = document.createElement("p");
+
+  const nameWrapper = document.createElement("div");
+  const streetWrapper = document.createElement("div");
+  const cityWrapper = document.createElement("div");
+  const stateWrapper = document.createElement("div");
+  const countryWrapper = document.createElement("div");
+  const telephoneWrapper = document.createElement("div");
+  const birthdayWrapper = document.createElement("div");
 
   icon.classList.add("fa");
   icon.classList.add("fa-circle-o");
@@ -118,17 +142,7 @@ peoples.map((people) => {
       : (peopleContainer.style.display = "none");
   });
 
-  const peopleContainer = document.createElement("div");
-
   peopleContainer.classList.add("peopleContainer");
-
-  const peopleName = document.createElement("p");
-  const peopleStreet = document.createElement("p");
-  const peopleCity = document.createElement("p");
-  const peopleState = document.createElement("p");
-  const peopleCountry = document.createElement("p");
-  const peopleTelephone = document.createElement("p");
-  const peopleBirthday = document.createElement("p");
 
   peopleName.classList.add("info");
   peopleStreet.classList.add("info");
@@ -138,14 +152,6 @@ peoples.map((people) => {
   peopleTelephone.classList.add("info");
   peopleBirthday.classList.add("info");
 
-  const name = document.createElement("p");
-  const street = document.createElement("p");
-  const city = document.createElement("p");
-  const state = document.createElement("p");
-  const country = document.createElement("p");
-  const telephone = document.createElement("p");
-  const birthday = document.createElement("p");
-
   name.classList.add("label");
   street.classList.add("label");
   city.classList.add("label");
@@ -153,14 +159,6 @@ peoples.map((people) => {
   country.classList.add("label");
   telephone.classList.add("label");
   birthday.classList.add("label");
-
-  const nameWrapper = document.createElement("div");
-  const streetWrapper = document.createElement("div");
-  const cityWrapper = document.createElement("div");
-  const stateWrapper = document.createElement("div");
-  const countryWrapper = document.createElement("div");
-  const telephoneWrapper = document.createElement("div");
-  const birthdayWrapper = document.createElement("div");
 
   nameWrapper.classList.add("line");
   streetWrapper.classList.add("line");
