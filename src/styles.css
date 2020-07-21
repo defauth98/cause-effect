@@ -77,6 +77,10 @@ h1 {
   margin: 10px;
 }
 
+.smallNameContainer:hover {
+  color: #434544;
+}
+
 @keyframes move {
   from {
     opacity: 0;
