@@ -78,7 +78,7 @@ h1 {
 }
 
 .smallNameContainer:hover {
-  color: #434544;
+  color: #434544ff;
 }
 
 @keyframes move {

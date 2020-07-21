@@ -132,9 +132,11 @@ peoples.map((people) => {
     if (circle) {
       icon.classList.remove("fa-circle-o");
       icon.classList.add("fa-angle-down");
+      smallNameContainer.style.color = "#7cc48f";
     } else {
       icon.classList.remove("fa-angle-down");
       icon.classList.add("fa-circle-o");
+      smallNameContainer.style.color = "#000";
     }
 
     peopleContainer.style.display === "none"
